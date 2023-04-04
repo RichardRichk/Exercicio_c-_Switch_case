@@ -10,7 +10,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
             int Escolha;
             char Escolha_2;
 
-
+            Here:
+            Thread.Sleep(500);
             Console.WriteLine(@$"
             =======================================
             | Eae, qual vai ser a bebida de hoje ? |
@@ -63,6 +64,9 @@ namespace MyApp // Note: actual namespace depends on the project name.
                     break;
 
                 default:
+                    Thread.Sleep(500);
+                    Console.WriteLine($"Voce nao escolheu nenhuma bebida do cardapio, Escolha uma, vamos beber!");
+                    goto Here;
                     break;
             }
             
